@@ -1,0 +1,34 @@
+[build-system]
+requires = [
+  "setuptools>=69",
+  "wheel>=0.41",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medium-mcp-server"
+version = "0.1.0"
+description = "FastMCP server exposing a Medium post creation tool via MCP."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "White Rabbit" }
+]
+dependencies = [
+  "fastmcp>=0.1.0",
+  "httpx>=0.27,<1",
+  "python-dotenv>=1,<2",
+]
+
+[project.urls]
+Repository = "https://github.com/umes4ever/aiagent-mcp-medium-publisher"
+
+[project.scripts]
+medium-mcp-server = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]
+license-files = ["LICENSE"]
+
+

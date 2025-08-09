@@ -1,0 +1,8 @@
+# FastMCP framework for MCP servers
+fastmcp>=0.1.0
+
+# Async HTTP client for Medium API
+httpx>=0.27,<1
+
+# Load environment variables from .env
+python-dotenv>=1,<2

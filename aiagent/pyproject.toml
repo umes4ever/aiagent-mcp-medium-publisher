@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+  "setuptools>=69",
+  "wheel>=0.41",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medium-aiagent"
+version = "0.1.0"
+description = "Medium content AI agent that drafts articles and posts via an MCP toolset."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "White Rabbit" }
+]
+dependencies = [
+  "google-adk>=1.10.0",
+  "python-dotenv>=1,<2",
+]
+
+[project.urls]
+Repository = "https://github.com/umes4ever/aiagent-mcp-medium-publisher"
+
+[tool.setuptools]
+include-package-data = true
+license-files = ["LICENSE"]
+
+[tool.setuptools.packages.find]
+include = ["medium_aiagent*"]
+
+
