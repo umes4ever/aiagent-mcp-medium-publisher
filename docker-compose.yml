@@ -1,0 +1,24 @@
+services:
+  medium-mcp-server:
+    build:
+      context: ./medium-mcp-server
+      dockerfile: Dockerfile
+    container_name: medium-mcp-server
+    ports:
+      - "5055:5055"
+    restart: unless-stopped
+
+  aiagent:
+    build:
+      context: ./aiagent
+      dockerfile: Dockerfile
+    container_name: aiagent
+    environment:
+      - MEDIUM_MCP_URL=http://medium-mcp-server:5055/mcp/
+    ports:
+      - "8000:8000"
+    depends_on:
+      - medium-mcp-server
+    restart: unless-stopped
+
+
