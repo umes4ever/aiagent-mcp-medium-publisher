@@ -32,8 +32,8 @@ To run both the `aiagent` and `medium-mcp-server` services using Docker Compose,
 
 This setup ensures both services are networked together and ready for development or testing.
 
-For more details, see the accompanying Medium post: [AI-Powered Medium Publishing with MCP Server: From Draft to Post in One Command](https://medium.com/@umes4ever)
+For more details, see the accompanying Medium post: [AI-Powered Medium Publishing with MCP Server: From Draft to Post in One Command](https://medium.com/@umes4ever/ai-powered-medium-publishing-with-mcp-server-from-draft-to-post-in-one-command-b8e2b4af9bad)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/umes4ever/aiagent-mcp-medium-publisher/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/umes4ever/aiagent-mcp-medium-publisher/blob/main/LICENSE) file for details.
